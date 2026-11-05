@@ -40,7 +40,15 @@ The body ships its own `UCX_` hulls: 12 slices along the car, each split left an
   - a skeletal mesh (`Aero.SkelealMesh`, sic);
   - an animation (`Headlight.LightOnAnim`) the game plays when the lights come on.
 
-  Vanilla: Panther's `Headlight_01_Skel` + `Headlight_Popup`. Ours: bind pose = lids closed, raised lamps scaled to 1% about their hinge; the animation scales the lamps ×100 and the lids to 1%.
+  Vanilla: Panther's `Headlight_01_Skel` + `Headlight_Popup`: the pod turns about a hinge across the car.
+  Ours (`factory/popup.py`): the pack models the open and closed states, and the hinge line and angle are
+  **solved** so that the open pod, rotated back, lands on the closed lid (within 2 cm on all 7 cars).
+  The rig binds the pod closed, and `LightOn` rotates it open about that hinge. A self-check asserts
+  that the last frame equals the modelled open pod. Scaling the lid away and the lamp in looked wrong
+  in game ("the lid drops and something pushes the lamp up").
+- **High beam:** `MTVehicleHeadLight.bHighBeamOnly`. Cars whose pop-ups are only the high beams (F40,
+  Countach, Diablo) get extra headlight components with that flag on the pods. The normal headlights go
+  on the low-beam lamps.
 
 ## Mirrors
 

@@ -21,7 +21,9 @@ for car in json.load(open(JOB)):
     mats = list(sk.get_editor_property("materials"))
     trim = car["trim"]
     for m in mats:
-        s = str(m.get_editor_property("material_slot_name")).split(".")[0]
+        # Blender's "HeadLight.001" arrives as "HeadLight_001": match on the name without the copy suffix
+        import re
+        s = re.sub(r"(_\d{3}|\.\d+)$", "", str(m.get_editor_property("material_slot_name")))
         p = SLOT_MAT.get(s, trim)
         if lib.does_asset_exist(p): m.set_editor_property("material_interface", unreal.load_asset(p))
     sk.set_editor_property("materials", mats); lib.save_loaded_asset(sk)

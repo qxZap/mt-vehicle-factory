@@ -17,8 +17,8 @@ import json
 import os
 import sys
 
-sys.path.insert(0, os.environ.get("MORETUNING_REBASE", r"D:\MT\MoreTuning\Rebase"))
-sys.path.insert(0, os.environ.get("MORETUNING_DTF", r"D:\MT\MoreTuning\DataTableFramework"))
+sys.path.insert(0, os.environ.get("MORETUNING_REBASE", os.environ.get("MORETUNING_REBASE", r"D:\MT\MoreTuning\Rebase")))
+sys.path.insert(0, os.environ.get("MORETUNING_DTF", os.environ.get("MORETUNING_DTF", r"D:\MT\MoreTuning\DataTableFramework")))
 
 KIT = os.path.join(os.environ.get("MTVF_WORK", "work"), "factory", "kit")
 DEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Biceps_P", "MotorTown", "Content")

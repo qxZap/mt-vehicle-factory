@@ -16,7 +16,7 @@ import os
 import shutil
 import sys
 
-sys.path.insert(0, os.environ.get("MORETUNING_REBASE", r"D:\MT\MoreTuning\Rebase"))
+sys.path.insert(0, os.environ.get("MORETUNING_REBASE", os.environ.get("MORETUNING_REBASE", r"D:\MT\MoreTuning\Rebase")))
 HERE = os.path.dirname(os.path.abspath(__file__))
 MOD = os.path.join(HERE, "Biceps_P", "MotorTown", "Content")
 WHEELS_MOD = os.path.join(HERE, "PackWheels_P", "MotorTown", "Content")

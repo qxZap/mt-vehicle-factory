@@ -52,6 +52,7 @@ YourMod_P.pak
 - **People:** [docs/MANUAL.md](docs/MANUAL.md), step by step from a pack car to driving it.
 - **AI agents:** [docs/AI_AGENTS.md](docs/AI_AGENTS.md), the operating rules, the checks that catch silent failures, and what not to do.
 - **How a Motor Town vehicle is built:** [docs/CONCEPTS.md](docs/CONCEPTS.md). Wheels, slots, parts, mirrors, pop-ups, seats, engine. Read it before changing anything.
+- **Using Unreal Engine as the cooker:** [docs/COOKING.md](docs/COOKING.md). The empty project, stand-ins at the game's paths, import settings, the cook command, packing.
 
 ## Requirements
 
