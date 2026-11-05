@@ -1,0 +1,4 @@
+[submodule "tools/MTBPInjector/UAssetAPI"]
+	path = tools/MTBPInjector/UAssetAPI
+	url = https://github.com/qxZap/UAssetAPI.git
+	branch = ue720

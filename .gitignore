@@ -1,0 +1,11 @@
+work/
+*.fbx
+*.blend
+*.blend1
+*.uasset
+*.uexp
+*.ubulk
+*.pak
+tools/MTBPInjector/bin/
+tools/MTBPInjector/obj/
+__pycache__/

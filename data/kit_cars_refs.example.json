@@ -1,0 +1,44 @@
+{
+ "LP_Veh_Hatchback_03": {
+  "ref": "2017 Volkswagen Golf GTI (Mk7)",
+  "curb": 1290,
+  "front": 0.62,
+  "engine": "SmallBlock_240HP",
+  "awd": false,
+  "display": "Kestrel Hatch",
+  "length_mm": 4268
+ },
+ "LP_Veh_Sports_28": {
+  "ref": "Lamborghini Diablo VT",
+  "curb": 1600,
+  "front": 0.42,
+  "engine": "V12_400HP",
+  "awd": false,
+  "display": "Sunrise GT",
+  "length_mm": 4460,
+  "popup": true,
+  "engine_pos": "mid"
+ },
+ "LP_Veh_Pickup_03": {
+  "ref": "Mercedes-Benz G63 AMG 6x6",
+  "curb": 3000,
+  "front": 0.5,
+  "engine": "SmallBlock_320HP",
+  "awd": true,
+  "display": "Sherpa Six",
+  "length_mm": 5875,
+  "offroad": true
+ },
+ "LP_Veh_Sports_35": {
+  "ref": "Porsche 930 Turbo (911 Turbo 3.3)",
+  "curb": 1260,
+  "front": 0.39,
+  "engine": "V6Sport_200HP",
+  "awd": false,
+  "display": "Ironside",
+  "length_mm": 4291,
+  "dropped": "already in the game as the Fortem (user, 5 Nov 2026)",
+  "engine_pos": "rear"
+ },
+ "_comment": "One entry per pack model (key = the pack's file name). ref = the real car it was identified as; curb kg; front = share of weight on the front axle; engine = a game engine part row; awd; display = in-game name; length_mm = real length, the model is scaled to it; offroad = Offroad tyres+rims; popup = pop-up headlights; engine_pos = front|mid|rear; dropped = reason the car is not shipped (its id stays reserved)."
+}

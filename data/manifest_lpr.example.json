@@ -1,0 +1,21 @@
+[
+ {
+  "name": "LP_Veh_Sports_28",
+  "pack": "lowpolyracing",
+  "src": "<YourUnityProject>/Assets/Low Poly Racing Pack/Models/Sports/LP_Veh_Sports_28.fbx",
+  "materials": [
+   {
+    "slot": "Body",
+    "mat": "LP_ColorPalette"
+   },
+   {
+    "slot": "Glass",
+    "mat": "LP_Glass"
+   },
+   {
+    "slot": "lamp",
+    "mat": "LP_Lamp"
+   }
+  ]
+ }
+]
